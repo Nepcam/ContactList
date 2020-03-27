@@ -36,6 +36,7 @@
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.btnAddContact = new System.Windows.Forms.Button();
             this.lstContacts = new System.Windows.Forms.ListBox();
+            this.btnSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -114,11 +115,22 @@
             this.lstContacts.Size = new System.Drawing.Size(296, 260);
             this.lstContacts.TabIndex = 7;
             // 
+            // btnSort
+            // 
+            this.btnSort.Location = new System.Drawing.Point(292, 279);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(148, 59);
+            this.btnSort.TabIndex = 8;
+            this.btnSort.Text = "Sort List";
+            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 554);
+            this.Controls.Add(this.btnSort);
             this.Controls.Add(this.lstContacts);
             this.Controls.Add(this.btnAddContact);
             this.Controls.Add(this.txtPhone);
@@ -147,6 +159,7 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Button btnAddContact;
         private System.Windows.Forms.ListBox lstContacts;
+        private System.Windows.Forms.Button btnSort;
     }
 }
 

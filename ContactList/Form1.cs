@@ -79,7 +79,8 @@ namespace ContactList
             obj.Phone = txtPhone.Text;
 
             Write(obj);
-            Read();
+            BubbleSort();
+            Read();           
             Display();
             ClearForm();
 
@@ -89,6 +90,35 @@ namespace ContactList
         {
             Read();
             Display();
+        }
+
+        private void btnSort_Click(object sender, EventArgs e)
+        {
+            BubbleSort();
+            Display();
+        }
+
+        private void BubbleSort()
+        {
+            Contact temp;
+            bool swap;
+
+            do
+            {
+                swap = false;
+
+                for (int x = 0; x <(phoneBook.Length - 1) ; x++)
+                {
+                    if( phoneBook[x].LastName.CompareTo(phoneBook[x+1].LastName) > 0)
+                    {
+                        temp = phoneBook[x];
+                        phoneBook[x] = phoneBook[x + 1];
+                        phoneBook[x + 1] = temp;
+                        swap = true;
+                    }
+                }
+
+            } while (swap == true);
         }
 
     }//end of class

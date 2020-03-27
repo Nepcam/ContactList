@@ -71,7 +71,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Location = new System.Drawing.Point(251, 59);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(259, 22);
             this.txtFirstName.TabIndex = 3;
@@ -79,7 +79,7 @@
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(251, 112);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(259, 22);
             this.txtLastName.TabIndex = 4;
@@ -87,7 +87,7 @@
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(251, 172);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(259, 22);
             this.txtPhone.TabIndex = 5;
@@ -95,7 +95,7 @@
             // btnAddContact
             // 
             this.btnAddContact.Location = new System.Drawing.Point(73, 279);
-            this.btnAddContact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddContact.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddContact.Name = "btnAddContact";
             this.btnAddContact.Size = new System.Drawing.Size(147, 59);
             this.btnAddContact.TabIndex = 6;
@@ -109,7 +109,7 @@
             this.lstContacts.FormattingEnabled = true;
             this.lstContacts.ItemHeight = 16;
             this.lstContacts.Location = new System.Drawing.Point(652, 68);
-            this.lstContacts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstContacts.Margin = new System.Windows.Forms.Padding(4);
             this.lstContacts.Name = "lstContacts";
             this.lstContacts.Size = new System.Drawing.Size(296, 260);
             this.lstContacts.TabIndex = 7;
@@ -128,9 +128,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

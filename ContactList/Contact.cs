@@ -54,7 +54,7 @@ namespace ContactList
             string output = String.Empty;
 
             output += String.Format("{0}, {1}", LastName, FirstName);
-            output += String.Format("({0}) {1}-{2}", Phone.Substring(0, 3), Phone.Substring(3, 6), Phone.Substring(6, 10));
+            output += string.Format("({0}) {1}-{2}", Phone.Substring(0, 3), Phone.Substring(3, 3), Phone.Substring(6, 4));
 
             return output;
         }
